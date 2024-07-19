@@ -56,6 +56,6 @@ const loadImage = (url, cb) => {
 */
 const containerEl = document.querySelector('.container');
 loadImage('https://www.gstatic.com/webp/gallery/4.jpg', (imgEl) => {
-    containerEl.innerHTML = '';
+    containerEl.innerHTML = ''; // 초기화
     containerEl.append(imgEl);
 });
